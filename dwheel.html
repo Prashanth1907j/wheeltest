@@ -1,0 +1,126 @@
+<!Doctype html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='device-width,initial-scale=1.0'>
+    <title>Interview-Wheel</title>
+
+    <style>
+        .wheel_container {
+            display: flex;
+            position: absolute;
+            bottom: 35px;
+        }
+
+        .wheelbox {
+            padding: 150px;
+        }
+
+        #wlbig {
+            width: 27vmin;
+            height: 27vmin;
+
+        }
+
+        .wlpng {
+            width: 22vmin;
+            height: 22vmin;
+        }
+
+        .wlbg {
+            width: 20vmax;
+            height: 10vmax;
+            position: absolute;
+        }
+
+        .base_container {
+            border-right-width: 40px;
+
+        }
+
+        #centerbox {
+            position: relative;
+            bottom: 50px;
+            transition: 0.1ms ease-in-out;
+        }
+
+        .baseimage {
+            width: 100%;
+            height: 90vmin;
+
+        }
+
+        .hoverimage {
+            position: absolute;
+            height: 51vmin;
+            width: 60vmin;
+            bottom: 80px;
+            left: 495px;
+        }
+
+        .header {
+            position: absolute;
+            padding: 5px;
+            color: gray;
+        }
+
+        h5{
+            font-family: sans-serif;
+            font-weight: bold;
+            position: absolute;
+            font-size: 15px;
+            
+        }
+
+        h3,h4 {
+            font-family: sans-serif;
+        }
+        #wlbig:hover{
+            transform: scale(1.5);
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    <section>
+        <div class='header'>
+            <h3>Wheels</h3>
+            <h4><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br>
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</em></h4>
+        </div>
+        <div class='base_container'>
+            <img class='baseimage' src='bgcover.png'>
+            <img class='hoverimage' src='bgwheel.jpg'>
+        </div>
+
+        <div class='wheel_container'>
+
+            <div id='wl' class='wheelbox' >
+                <img class='wlpng' src='wgu.png'>
+                <h5 style='position:absolute; text-align: center;'>17-INCH CAST ALUMINIUM WHEEL, <BR>
+                FULLY PAINTED WITH LITHO<BR>Standard on Touring FWD<br>(WGU)</h5>
+            </div>
+
+            <div id='centerbox' class='wheelbox'>
+
+                <img id='wlbig' src='wjr.png'>
+                <h5 style='position:absolute; text-align:center;'>17-INCH CAST ALUMINIUM DIAMOND-CUT<BR>
+                WHEEL, WITH BALITIC GRAY POCKETS<BR>Standard on Touring FFWD/Hybrig and<br>
+                    Touring Hybrid<br>(WJR)</h5>
+            </div>
+
+            <div id='wr' class='wheelbox'>
+                <img class='wlpng' src='wp6.png'>
+                <h5 style='position:absolute; text-align: center;'>18-INCH CAST ALUMINIUM DIAMOND-CUT<BR>
+                WHEEL, WITH BALITIC GRAY POCKETS <BR> Standard on Touring LFWD/Hybrid and<br>
+                Touring Hybrid<br>(WPG)</h5>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
